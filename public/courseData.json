@@ -1,0 +1,75 @@
+[
+    {
+      "course_id": "101",
+      "course_title": "C Programming Essentials",
+      "cover_img": "https://i.ibb.co/chWXc53/Rectangle-2-2.png",
+      "course_description": "This comprehensive course will help you master the fundamentals of the C programming language. You'll learn how to build efficient software applications through hands-on projects and gain a deep understanding of C programming concepts and best practices.",
+      "price": 49.99,
+      "credit": 4
+    },
+    {
+      "course_id": "102",
+      "course_title": "Algorithm Design and Analysis",
+      "cover_img": "https://i.ibb.co/ykQwwLv/Rectangle-2-3.png",
+      "course_description": "Explore the fascinating world of algorithms with this in-depth course. Learn how to design, analyze, and optimize algorithms for solving complex problems efficiently. Through practical examples and problem-solving exercises, you'll develop the skills to tackle a wide range of computational challenges.",
+      "price": 59.99,
+      "credit": 5
+    },
+    {
+      "course_id": "103",
+      "course_title": "C++ Programming Fundamentals",
+      "cover_img": "https://i.ibb.co/mDp6gjf/Rectangle-2-4.png",
+      "course_description": "Delve into the basics of C++ programming and object-oriented principles in this hands-on course. You'll discover how to create practical applications and gain a solid foundation in C++ to build upon in your software development journey.",
+      "price": 54.99,
+      "credit": 4
+    },
+    {
+      "course_id": "104",
+      "course_title": "Data Structures in Depth",
+      "cover_img": "https://i.ibb.co/3cmFRfW/Rectangle-3.png",
+      "course_description": "Take a deep dive into the world of data structures and their applications in software development. From arrays to trees, you'll explore a variety of data structures and learn how to apply them effectively in real-world projects, enhancing your programming skills along the way.",
+      "price": 59.99,
+      "credit": 5
+    },
+    {
+      "course_id": "105",
+      "course_title": "Object-Oriented Python Programming",
+      "cover_img": "https://i.ibb.co/s20rKsd/Rectangle-2.png",
+      "course_description": "Discover the power of Python with a focus on object-oriented programming in this comprehensive course. You'll build real-world applications and gain the skills needed to create efficient, maintainable, and scalable Python code.",
+      "price": 49.99,
+      "credit": 4
+    },
+    {
+      "course_id": "106",
+      "course_title": "Software Engineering Best Practices",
+      "cover_img": "https://i.ibb.co/tPcKPZz/Rectangle-2-5.png",
+      "course_description": "Learn the best practices in software engineering, from design patterns to agile methodologies. You'll gain the knowledge and tools to lead successful software projects, ensuring high-quality results, efficient collaboration, and satisfied stakeholders.",
+      "price": 64.99,
+      "credit": 6
+    },
+    {
+      "course_id": "107",
+      "course_title": "AWS Cloud Services Mastery",
+      "cover_img": "https://i.ibb.co/sPhC28T/Rectangle-3-1.png",
+      "course_description": "Master Amazon Web Services (AWS) and the world of cloud computing in this comprehensive course. You'll learn how to deploy scalable and secure applications, manage cloud resources, and become a confident AWS practitioner.",
+      "price": 74.99,
+      "credit": 7
+    },
+    {
+      "course_id": "108",
+      "course_title": "MySQL Database Management",
+      "cover_img": "https://i.ibb.co/ZThG7dn/Rectangle-2-1.png",
+      "course_description": "Unlock the secrets of efficient MySQL database management. You'll learn to handle, optimize, and secure MySQL databases, ensuring smooth data storage and retrieval for your applications, while also gaining valuable database administration skills.",
+      "price": 54.99,
+      "credit": 4
+    },
+    {
+      "course_id": "109",
+      "course_title": "Problem-Solving Strategies",
+      "cover_img": "https://i.ibb.co/bWf39Wz/Rectangle-2-6.png",
+      "course_description": "Enhance your problem-solving skills with a focus on real-world challenges. This course equips you with effective problem-solving strategies, decision-making techniques, and critical thinking skills to tackle complex issues and make well-informed choices.",
+      "price": 44.99,
+      "credit": 3
+    }
+]
+  
