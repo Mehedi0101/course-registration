@@ -7,7 +7,7 @@ const Cart = ({selectedCourse, totalCredit}) => {
     const remainingCredits = (20 - totalCredit);
 
     return (
-        <div className="w-full md:w-1/4 p-6">
+        <div className="w-full md:w-1/3 lg:w-1/4 p-6">
             <p className='text-lg font-bold text-blue-500'>Credit Hour Remaining {remainingCredits} hr</p>
 
             <hr className='border-[#1c1b1b33] my-4' />
