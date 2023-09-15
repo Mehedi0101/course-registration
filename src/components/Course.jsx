@@ -2,9 +2,15 @@ import Proptypes from 'prop-types';
 import { FiDollarSign } from 'react-icons/fi';
 import { HiOutlineBookOpen } from 'react-icons/hi';
 
-const Course = ({course}) => {
+const Course = ({course, selectedCourse, setSelectedCourse}) => {
 
     const { course_title, cover_img, course_description, price, credit } = course;
+
+    const handleSelect = () => {
+        if(!selectedCourse.find(selected => selected.course_id === course.course_id)){
+            setSelectedCourse([...selectedCourse, course]);
+        }
+    }
 
     return (
         <div className='p-4 flex flex-col justify-between'>
@@ -25,7 +31,7 @@ const Course = ({course}) => {
                     </div>
                 </div>
 
-                <button className='bg-blue-500 active:bg-blue-700 text-white text-lg font-semibold w-full py-2 rounded-lg transition-colors duration-75'>Select</button>
+                <button className='bg-blue-500 active:bg-blue-700 text-white text-lg font-semibold w-full py-2 rounded-lg transition-colors duration-75' onClick={handleSelect}>Select</button>
             </div>
         </div>
     );
@@ -33,7 +39,9 @@ const Course = ({course}) => {
 
 
 Course.propTypes = {
-    course: Proptypes.object.isRequired
+    course: Proptypes.object.isRequired,
+    selectedCourse: Proptypes.array.isRequired,
+    setSelectedCourse: Proptypes.func.isRequired
 }
 
 export default Course;
