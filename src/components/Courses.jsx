@@ -18,7 +18,7 @@ const Courses = ({selectedCourse, setSelectedCourse, totalCredit}) => {
     }, [] )
 
     return (
-        <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {
                 courses.map( course => <Course key={course.course_id} course={course} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} totalCredit={totalCredit}></Course> )
             }

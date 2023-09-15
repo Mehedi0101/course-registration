@@ -1,0 +1,14 @@
+.toast-exist {
+    opacity: 0;
+    animation: toast 1.2s ease-in-out 1;
+}
+
+@keyframes toast {
+    0%,100% {
+        opacity: 0;
+    }
+
+    20%,80% {
+        opacity: 100;
+    }
+}
