@@ -2,13 +2,15 @@ import Proptypes from 'prop-types';
 import { FiDollarSign } from 'react-icons/fi';
 import { HiOutlineBookOpen } from 'react-icons/hi';
 
-const Course = ({course, selectedCourse, setSelectedCourse}) => {
+const Course = ({course, selectedCourse, setSelectedCourse, totalCredit}) => {
 
     const { course_title, cover_img, course_description, price, credit } = course;
 
     const handleSelect = () => {
-        if(!selectedCourse.find(selected => selected.course_id === course.course_id)){
-            setSelectedCourse([...selectedCourse, course]);
+        if(totalCredit+course.credit <= 20){
+            if(!selectedCourse.find(selected => selected.course_id === course.course_id)){
+                setSelectedCourse([...selectedCourse, course]);
+            }
         }
     }
 
@@ -41,7 +43,8 @@ const Course = ({course, selectedCourse, setSelectedCourse}) => {
 Course.propTypes = {
     course: Proptypes.object.isRequired,
     selectedCourse: Proptypes.array.isRequired,
-    setSelectedCourse: Proptypes.func.isRequired
+    setSelectedCourse: Proptypes.func.isRequired,
+    totalCredit: Proptypes.number.isRequired
 }
 
 export default Course;

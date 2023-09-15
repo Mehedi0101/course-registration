@@ -1,14 +1,14 @@
 import Proptypes from 'prop-types';
 
-const Cart = ({selectedCourse}) => {
+const Cart = ({selectedCourse, totalCredit}) => {
 
-    const totalCredit = selectedCourse.reduce((total, selected) => total += selected.credit, 0);
+    const totalPrice = selectedCourse.reduce((total, selected) => total += selected.price, 0).toFixed(2);
 
-    const totalPrice = selectedCourse.reduce((total, selected) => total += selected.price, 0);
+    const remainingCredits = (20 - totalCredit);
 
     return (
         <div className="w-full md:w-1/4 p-6">
-            <p className='text-lg font-bold text-blue-500'>Credit Hour Remaining 7 hr</p>
+            <p className='text-lg font-bold text-blue-500'>Credit Hour Remaining {remainingCredits} hr</p>
 
             <hr className='border-[#1c1b1b33] my-4' />
 
@@ -29,7 +29,8 @@ const Cart = ({selectedCourse}) => {
 };
 
 Cart.propTypes = {
-    selectedCourse: Proptypes.object.isRequired
+    selectedCourse: Proptypes.array.isRequired,
+    totalCredit: Proptypes.number.isRequired
 }
 
 export default Cart;
