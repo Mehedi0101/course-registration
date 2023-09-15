@@ -3,7 +3,7 @@ import { useState } from "react";
 import Course from "./Course";
 import Proptypes from 'prop-types';
 
-const Courses = ({selectedCourse, setSelectedCourse}) => {
+const Courses = ({selectedCourse, setSelectedCourse, totalCredit}) => {
 
     const [courses, setCourses] = useState([]);
 
@@ -20,7 +20,7 @@ const Courses = ({selectedCourse, setSelectedCourse}) => {
     return (
         <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {
-                courses.map( course => <Course key={course.course_id} course={course} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse}></Course> )
+                courses.map( course => <Course key={course.course_id} course={course} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} totalCredit={totalCredit}></Course> )
             }
         </div>
     );
@@ -28,7 +28,8 @@ const Courses = ({selectedCourse, setSelectedCourse}) => {
 
 Courses.propTypes = {
     selectedCourse: Proptypes.array.isRequired,
-    setSelectedCourse: Proptypes.func.isRequired
+    setSelectedCourse: Proptypes.func.isRequired,
+    totalCredit: Proptypes.number.isRequired
 }
 
 export default Courses;
